@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Outfit, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f6f8fc;
+}
+
+code {
+    font-family: Outfit, sans-serif !important;
+}
