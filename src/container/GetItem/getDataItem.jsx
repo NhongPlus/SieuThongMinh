@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { replaceSpace } from "../../function/handleText";
 import { typeColors } from "../../function/handleColor";
 
-// Định nghĩa các styled component bên ngoài hàm GetItem
-const PokemonCard = styled.div`
+export const PokemonCard = styled.div`
     flex: 0.5 1 0%;
     min-width: 20%;
     margin: 60px 0px 0px;
@@ -26,34 +25,29 @@ const PokemonCard = styled.div`
         transform: scale(1.2);
     }
 `;
-
-const PokemonDivImage = styled.div`
+export const PokemonDivImage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 `;
-
-const PokeImage = styled.img`
+export const PokeImage = styled.img`
     position: absolute;
     top: -55px;
     transition-duration: 100ms;
     image-rendering: pixelated;
 `;
-
-const PokemonTypes = styled.div`
+export const PokemonTypes = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
 `;
-
-const PokemonId = styled.div`
+export const PokemonId = styled.div`
     color: rgb(143, 147, 150);
     font-size: 13px;
     font-weight: bold;
 `;
-
-const PokemonName = styled.div`
+export const PokemonName = styled.div`
     color: rgb(1, 16, 48);
     margin: 5px;
     font-weight: bold;
@@ -61,8 +55,7 @@ const PokemonName = styled.div`
     margin: 0;
     font-size: 20px;
 `;
-
-const PokemonType = styled.span`
+export const PokemonType = styled.span`
     border-radius: 5px;
     padding: 3px 7px;
     color: black;

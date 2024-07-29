@@ -1,6 +1,5 @@
 import React from "react";
-import Item from "./components/Item/item";
-import GetItem from "./container/GetItem/getDataItem";
+import AllComponent from "./components/Father/allComponent";
 import { FaAngleUp } from "react-icons/fa6";
 import styled from "styled-components";
 const ButtonUp = styled.button`
@@ -25,20 +24,7 @@ const App = () => {
   }
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-8">
-          {/* <Search setFindPoke={setFindPoke} /> */}
-        </div>
-        <div className="col-4"></div>
-      </div>
-      <div className="row">
-        <div className="col-8">
-          <Item />
-        </div>
-        <div className="col-4">
-          {/* <Description /> */}
-        </div>
-      </div>
+      <AllComponent />
       <ButtonUp onClick={backToTop}>
         <FaAngleUp />
       </ButtonUp>

@@ -14,7 +14,7 @@ export const mapName = (name) => {
             return name
     }
 };
-export const Text = (text) => {
+export const ChangeText = (text) => {
     return text.replace(/\u000c/g, ' ').replace(/move/g, 'move');
 };
 export function replaceSpace(str) {

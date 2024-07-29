@@ -1,21 +1,22 @@
 import React, { useEffect, useState, useRef } from 'react';
 import GetItem from '../../container/GetItem/getDataItem';
 import styled from 'styled-components';
+export const Dot = styled.div`
+    margin-bottom: 10px;
+`;
 
 const ITEM_PER_PAGE = 20;
 
-const Dot = styled.div`
-    margin-bottom: 10px;
-`;
-function Item() {
+
+function Item(props) {
+    const {setSelectedNumber , findPoke} = props;
+
     const urlPokemon = "https://pokeapi.co/api/v2/pokemon/?limit=898";
     const urlType = "https://pokeapi.co/api/v2/type";
     const [pokemonData, setPokemonData] = useState([]);
-    const [selectedNumber, setSelectedNumber] = useState(undefined);
     const [currentPage, setCurrentPage] = useState(0);
     const [savedPage, setSavedPage] = useState(0); // lưu trữ số trang đã render
     const [renderedData, setRenderedData] = useState([]);
-    const [findPoke, setFindPoke] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const botRef = useRef(null);
 
